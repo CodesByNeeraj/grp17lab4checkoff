@@ -1,0 +1,29 @@
+module operations_rom (
+    input address[4],  // ROM address
+    output op[6]
+) {
+    
+    const DATA = {
+        6b000000,
+        6b000000,
+        6b000000,
+        6b000001,
+        6b000001,
+        6b000010,
+        6b000010,
+        6b000100,
+        6b000100,
+        6b011000,
+        6b011110,
+        6b010110,
+        6b010110,
+        6b100000,
+        6b100001,
+        6b110011
+    }
+    
+    
+    always {
+        op = DATA[address]
+    }
+}

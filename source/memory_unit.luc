@@ -1,0 +1,47 @@
+// supports byte addressable
+module memory_unit #(
+  WORDS = 16 // default number of words (entries) in the memory
+)
+(
+    input clk,  // clock
+    
+    // for data memory
+    input raddr[$clog2(WORDS)+2], // byte addressing expected, address to read from data memory 
+    input waddr[$clog2(WORDS)+2], // byte addressing expected, address to write to in data memory
+    input wd[32], // write data
+    input we,
+    output mrd[32], //data read from memory data
+            
+    // for instruction memory 
+    input ia[$clog2(WORDS)+2], // byte addressing expected
+    input instruction_we,
+    input instruction_wd[32],
+    output id[32] //data read from instruction data
+
+  ) {
+   
+    //creating simple ram block for instructions (each width is 32 bits). ram is used to store instructuons
+  simple_ram instruction_memory(#WIDTH(32), #ENTRIES(WORDS), .clk(clk)); // can fit 32 * WORDS bits 
+    //for data memory, dual ports, can read and write at the same time. it needs 2 clocks, one to write, one to read
+  simple_dual_port_ram data_memory(#WIDTH(32), #ENTRIES(WORDS), .wclk(clk), .rclk(clk)); // can fit 32 * WORDS bits 
+ 
+  
+  always {
+
+    // instruction memory connections
+    instruction_memory.write_data = instruction_wd;
+        //clog is take log of 16. which is 4. 4+2-1 = 5. slicing out the upper bits of 32 bit instruction address
+    instruction_memory.address = ia[$clog2(WORDS)+2-1:2]; // memory_unit is word addressable in Lucid, ignore two LSB
+    instruction_memory.write_enable = instruction_we;
+        //sends instruction fetched from memory to rest of ur CPU
+    id = instruction_memory.read_data;
+    
+    // data memory connections
+    data_memory.raddr = raddr[$clog2(WORDS)+2-1:2]; // memory_unit is word addressable in Lucid, ignore two LSB
+    data_memory.waddr = waddr[$clog2(WORDS)+2-1:2]; // memory_unit is word addressable in Lucid, ignore two LSB
+    data_memory.write_data = wd;
+    data_memory.write_enable = we;
+    mrd = data_memory.read_data;
+    
+  }
+}
