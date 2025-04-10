@@ -224,8 +224,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports {io_segment[7]}]
 
 set_property PACKAGE_PIN N14 [get_ports {clk}]
 set_property IOSTANDARD LVCMOS33 [get_ports {clk}]
-# clk => 10000000Hz
-create_clock -period 100.0 -name clk_65 -waveform {0.000 50.0} [get_ports clk]
+# clk => 9000000Hz
+create_clock -period 111.11111111111111 -name clk_65 -waveform {0.000 55.55555555555556} [get_ports clk]
 set_clock_groups -asynchronous -group [get_clocks -include_generated_clocks clk_65]
 
 set_property PACKAGE_PIN P6 [get_ports {rst_n}]

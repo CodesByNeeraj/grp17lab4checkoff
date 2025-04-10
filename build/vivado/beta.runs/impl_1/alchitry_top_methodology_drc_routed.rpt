@@ -1,8 +1,8 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Apr 10 16:34:08 2025
-| Host         : LAPTOP-6R0BMEKF running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Apr 10 17:15:31 2025
+| Host         : PC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file alchitry_top_methodology_drc_routed.rpt -pb alchitry_top_methodology_drc_routed.pb -rpx alchitry_top_methodology_drc_routed.rpx
 | Design       : alchitry_top
 | Device       : xc7a35tftg256-1
@@ -22,160 +22,25 @@ Table of Contents
             Netlist: netlist
           Floorplan: design_1
       Design limits: <entire design considered>
-             Max violations: <unlimited>
-             Violations found: 79
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-16 | Warning  | Large setup violation         | 29         |
-| TIMING-18 | Warning  | Missing input or output delay | 50         |
-+-----------+----------+-------------------------------+------------+
+             Max checks: <unlimited>
+             Checks found: 52
++-----------+----------+--------------------------------------------+--------+
+| Rule      | Severity | Description                                | Checks |
++-----------+----------+--------------------------------------------+--------+
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal | 2      |
+| TIMING-18 | Warning  | Missing input or output delay              | 50     |
++-----------+----------+--------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -1.054 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[10][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance beta_manual/motherboard/memory_unit/data_memory/mem_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
-TIMING-16#2 Warning
-Large setup violation  
-There is a large setup violation of -1.087 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[15][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#3 Warning
-Large setup violation  
-There is a large setup violation of -1.119 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[3][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#4 Warning
-Large setup violation  
-There is a large setup violation of -1.120 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[18][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#5 Warning
-Large setup violation  
-There is a large setup violation of -1.130 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[21][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#6 Warning
-Large setup violation  
-There is a large setup violation of -1.130 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[2][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#7 Warning
-Large setup violation  
-There is a large setup violation of -1.234 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[6][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#8 Warning
-Large setup violation  
-There is a large setup violation of -1.235 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[23][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#9 Warning
-Large setup violation  
-There is a large setup violation of -1.237 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[7][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#10 Warning
-Large setup violation  
-There is a large setup violation of -1.238 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[30][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#11 Warning
-Large setup violation  
-There is a large setup violation of -1.244 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[0][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#12 Warning
-Large setup violation  
-There is a large setup violation of -1.250 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[17][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#13 Warning
-Large setup violation  
-There is a large setup violation of -1.268 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[13][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#14 Warning
-Large setup violation  
-There is a large setup violation of -1.271 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[27][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#15 Warning
-Large setup violation  
-There is a large setup violation of -1.274 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[22][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#16 Warning
-Large setup violation  
-There is a large setup violation of -1.278 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[20][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#17 Warning
-Large setup violation  
-There is a large setup violation of -1.297 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[1][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#18 Warning
-Large setup violation  
-There is a large setup violation of -1.338 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[25][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#19 Warning
-Large setup violation  
-There is a large setup violation of -1.355 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[11][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#20 Warning
-Large setup violation  
-There is a large setup violation of -1.357 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[9][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#21 Warning
-Large setup violation  
-There is a large setup violation of -1.363 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[14][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#22 Warning
-Large setup violation  
-There is a large setup violation of -1.392 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[12][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#23 Warning
-Large setup violation  
-There is a large setup violation of -1.393 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[29][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#24 Warning
-Large setup violation  
-There is a large setup violation of -1.399 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[16][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#25 Warning
-Large setup violation  
-There is a large setup violation of -1.414 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[4][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#26 Warning
-Large setup violation  
-There is a large setup violation of -1.415 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[8][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#27 Warning
-Large setup violation  
-There is a large setup violation of -1.426 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[26][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#28 Warning
-Large setup violation  
-There is a large setup violation of -1.431 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[24][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#29 Warning
-Large setup violation  
-There is a large setup violation of -1.534 ns between beta_manual/motherboard/memory_unit/instruction_memory/ram_reg/CLKBWRCLK (clocked by clk_65) and beta_manual/motherboard/beta/regfile_system/regfile/D_registers_q_reg[28][0]/D (clocked by clk_65). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance beta_manual/motherboard/memory_unit/instruction_memory/ram_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 TIMING-18#1 Warning

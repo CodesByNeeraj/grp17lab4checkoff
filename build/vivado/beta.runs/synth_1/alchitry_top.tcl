@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.runs/synth_1/alchitry_top.tcl"
+  variable script "C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.runs/synth_1/alchitry_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -55,20 +55,6 @@ if {$::dispatch::connected} {
   }
 }
 
-proc create_report { reportName command } {
-  set status "."
-  append status $reportName ".fail"
-  if { [file exists $status] } {
-    eval file delete [glob $status]
-  }
-  send_msg_id runtcl-4 info "Executing : $command"
-  set retval [eval catch { $command } msg]
-  if { $retval != 0 } {
-    set fp [open $status w]
-    close $fp
-    send_msg_id runtcl-5 warning "$msg"
-  }
-}
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tftg256-1
@@ -76,49 +62,49 @@ create_project -in_memory -part xc7a35tftg256-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.cache/wt [current_project]
+set_property parent.project_path C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/adder.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/alu.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/boolean.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/compare.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/control_unit.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/counter.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/decoder.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/divider.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/edge_detector.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/fa.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/instruction_rom.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/memory_unit.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/multi_seven_seg.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/multiplier.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pipeline.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/rca.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_memory.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/reset_conditioner.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/shifter.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/alchitry_top.sv}
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/adder.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/alu.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/boolean.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/compare.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/control_unit.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/counter.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/decoder.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/divider.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/edge_detector.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/fa.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/instruction_rom.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/memory_unit.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/multi_seven_seg.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/multiplier.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pipeline.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/rca.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_memory.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/reset_conditioner.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/shifter.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/alchitry_top.sv
 }
 read_verilog -library xil_defaultlib {
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/simple_dual_port_ram.v}
-  {C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/simple_ram.v}
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/simple_dual_port_ram.v
+  C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/simple_ram.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -129,11 +115,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/alchitry.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/alchitry.xdc}}]
+read_xdc C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/alchitry.xdc
+set_property used_in_implementation false [get_files C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/alchitry.xdc]
 
-read_xdc {{C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/au_props.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/au_props.xdc}}]
+read_xdc C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/au_props.xdc
+set_property used_in_implementation false [get_files C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/au_props.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
@@ -152,7 +138,7 @@ set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef alchitry_top.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file alchitry_top_utilization_synth.rpt -pb alchitry_top_utilization_synth.pb"
+generate_parallel_reports -reports { "report_utilization -file alchitry_top_utilization_synth.rpt -pb alchitry_top_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

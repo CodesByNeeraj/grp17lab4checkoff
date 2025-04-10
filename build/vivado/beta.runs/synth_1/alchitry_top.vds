@@ -1,18 +1,27 @@
 #-----------------------------------------------------------
-# Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
-# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Apr 10 16:29:17 2025
-# Process ID: 24680
-# Current directory: C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.runs/synth_1
-# Command line: vivado.exe -log alchitry_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alchitry_top.tcl
-# Log file: C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.runs/synth_1/alchitry_top.vds
-# Journal file: C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.runs/synth_1\vivado.jou
-# Running On: LAPTOP-6R0BMEKF, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 16312 MB
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 10 17:13:27 2025
+# Process ID         : 48484
+# Current directory  : C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.runs/synth_1
+# Command line       : vivado.exe -log alchitry_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alchitry_top.tcl
+# Log file           : C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.runs/synth_1/alchitry_top.vds
+# Journal file       : C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.runs/synth_1\vivado.jou
+# Running On         : PC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 9900X 12-Core Processor            
+# CPU Frequency      : 4392 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 66125 MB
+# Swap memory        : 4160 MB
+# Total Virtual      : 70286 MB
+# Available Virtual  : 34076 MB
 #-----------------------------------------------------------
 source alchitry_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 456.020 ; gain = 183.023
 Command: synth_design -top alchitry_top -part xc7a35tftg256-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
@@ -20,165 +29,165 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 33540
+INFO: [Synth 8-7075] Helper process launched with PID 19696
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1288.844 ; gain = 438.328
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 946.887 ; gain = 464.855
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'alchitry_top' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/alchitry_top.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'reset_conditioner' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/reset_conditioner.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'alchitry_top' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/alchitry_top.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'reset_conditioner' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/reset_conditioner.sv:7]
 	Parameter STAGES bound to: 3'b100 
-INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/reset_conditioner.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'beta_manual_tester' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv:7]
-	Parameter CLK_FREQ bound to: 27'b101111101011110000100000000 
-INFO: [Synth 8-6157] synthesizing module 'button_conditioner' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
-	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/reset_conditioner.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'beta_manual_tester' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv:7]
+	Parameter CLK_FREQ bound to: 24'b100010010101010001000000 
+INFO: [Synth 8-6157] synthesizing module 'button_conditioner' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
+	Parameter CLK_FREQ bound to: 9000000 - type: integer 
 	Parameter MIN_DELAY bound to: 5'b10100 
 	Parameter NUM_SYNC bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'pipeline' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pipeline.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'pipeline' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pipeline.sv:7]
 	Parameter DEPTH bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'pipeline' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pipeline.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'button_conditioner' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'edge_detector' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/edge_detector.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pipeline.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'button_conditioner' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/edge_detector.sv:7]
 	Parameter RISE bound to: 1'b1 
 	Parameter FALL bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/edge_detector.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'motherboard' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'beta_cpu' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/control_unit.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/control_unit.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/alu.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/edge_detector.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'motherboard' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'beta_cpu' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/control_unit.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/control_unit.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/alu.sv:7]
 	Parameter SIZE bound to: 6'b100000 
-INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/adder.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/adder.sv:7]
 	Parameter SIZE bound to: 6'b100000 
-INFO: [Synth 8-6157] synthesizing module 'rca' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/rca.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'rca' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/rca.sv:7]
 	Parameter SIZE bound to: 6'b100000 
-INFO: [Synth 8-6157] synthesizing module 'fa' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/fa.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/fa.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'rca' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/rca.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/adder.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'compare' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/compare.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'compare' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/compare.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'boolean' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/boolean.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'fa' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/fa.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'fa' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/fa.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'rca' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/rca.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/adder.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'compare' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/compare.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'compare' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/compare.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'boolean' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/boolean.sv:7]
 	Parameter SIZE bound to: 6'b100000 
-INFO: [Synth 8-6155] done synthesizing module 'boolean' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/boolean.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'boolean' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/boolean.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00001 
-INFO: [Synth 8-6157] synthesizing module 'mux_2' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv:14]
-INFO: [Synth 8-6155] done synthesizing module 'mux_2' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized0' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'mux_2' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/mux_2.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized0' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00010 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized0' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized1' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized0' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized1' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00100 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized1' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized2' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized1' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized2' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b01000 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized2' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized3' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized2' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_left_shifter__parameterized3' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b10000 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized3' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_left_shifter__parameterized3' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_left_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00001 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized0' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized0' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00010 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized0' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized1' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized0' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized1' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00100 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized1' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized2' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized1' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized2' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b01000 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized2' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized3' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized2' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_shifter__parameterized3' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b10000 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized3' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_shifter__parameterized3' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00001 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized0' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized0' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00010 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized0' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized1' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized0' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized1' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b00100 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized1' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized2' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized1' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized2' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b01000 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized2' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized3' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized2' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'x_bit_right_ari_shifter__parameterized3' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
 	Parameter SHIFT bound to: 5'b10000 
-INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized3' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'shifter' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/shifter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'multiplier' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/multiplier.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/multiplier.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/divider.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/divider.sv:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/alu.sv:139]
-INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/alu.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'regfile_unit' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'regfile_memory' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_memory.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'regfile_memory' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_memory.sv:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:56]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:68]
-INFO: [Synth 8-6155] done synthesizing module 'regfile_unit' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'pc_unit' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'pc_unit' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:157]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:169]
-INFO: [Synth 8-6155] done synthesizing module 'beta_cpu' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'instruction_rom' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/instruction_rom.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'x_bit_right_ari_shifter__parameterized3' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/x_bit_right_ari_shifter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/shifter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/multiplier.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/multiplier.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/divider.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/divider.sv:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/alu.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/alu.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'regfile_unit' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'regfile_memory' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_memory.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'regfile_memory' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_memory.sv:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:56]
+INFO: [Synth 8-226] default block is never used [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'regfile_unit' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/regfile_unit.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'pc_unit' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'pc_unit' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:157]
+INFO: [Synth 8-226] default block is never used [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:169]
+INFO: [Synth 8-6155] done synthesizing module 'beta_cpu' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'instruction_rom' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/instruction_rom.sv:7]
 	Parameter WORDS bound to: 6'b100000 
-INFO: [Synth 8-6155] done synthesizing module 'instruction_rom' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/instruction_rom.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'memory_unit' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/memory_unit.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_rom' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/instruction_rom.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'memory_unit' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/memory_unit.sv:7]
 	Parameter WORDS bound to: 6'b100000 
-INFO: [Synth 8-6157] synthesizing module 'simple_ram' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/simple_ram.v:50]
+INFO: [Synth 8-6157] synthesizing module 'simple_ram' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/simple_ram.v:50]
 	Parameter WIDTH bound to: 6'b100000 
 	Parameter ENTRIES bound to: 6'b100000 
-INFO: [Synth 8-6155] done synthesizing module 'simple_ram' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/simple_ram.v:50]
-INFO: [Synth 8-6157] synthesizing module 'simple_dual_port_ram' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/simple_dual_port_ram.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'simple_ram' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/simple_ram.v:50]
+INFO: [Synth 8-6157] synthesizing module 'simple_dual_port_ram' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/simple_dual_port_ram.v:47]
 	Parameter WIDTH bound to: 6'b100000 
 	Parameter ENTRIES bound to: 6'b100000 
-INFO: [Synth 8-6155] done synthesizing module 'simple_dual_port_ram' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/simple_dual_port_ram.v:47]
-INFO: [Synth 8-6155] done synthesizing module 'memory_unit' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/memory_unit.sv:7]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv:131]
-INFO: [Synth 8-6155] done synthesizing module 'motherboard' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'button_conditioner__parameterized0' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
-	Parameter CLK_FREQ bound to: 27'b101111101011110000100000000 
+INFO: [Synth 8-6155] done synthesizing module 'simple_dual_port_ram' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/simple_dual_port_ram.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'memory_unit' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/memory_unit.sv:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv:131]
+INFO: [Synth 8-6155] done synthesizing module 'motherboard' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/motherboard.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'button_conditioner__parameterized0' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
+	Parameter CLK_FREQ bound to: 24'b100010010101010001000000 
 	Parameter MIN_DELAY bound to: 5'b10100 
 	Parameter NUM_SYNC bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'button_conditioner__parameterized0' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'button_conditioner__parameterized0' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/button_conditioner.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
 	Parameter SIZE bound to: 5'b11100 
 	Parameter DIV bound to: 1'b0 
 	Parameter TOP bound to: 1'b0 
 	Parameter UP bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'multi_seven_seg' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/multi_seven_seg.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'multi_seven_seg' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/multi_seven_seg.sv:7]
 	Parameter DIGITS bound to: 3'b100 
 	Parameter DIV bound to: 5'b10000 
-INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
 	Parameter SIZE bound to: 2 - type: integer 
 	Parameter DIV bound to: 5'b10000 
 	Parameter TOP bound to: 3'b011 
 	Parameter UP bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv:13]
-INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv:7]
-INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/decoder.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/seven_seg.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/decoder.sv:7]
 	Parameter WIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/decoder.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'multi_seven_seg' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/multi_seven_seg.sv:7]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv:224]
-INFO: [Synth 8-6155] done synthesizing module 'beta_manual_tester' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv:7]
-INFO: [Synth 8-6155] done synthesizing module 'alchitry_top' (0#1) [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/alchitry_top.sv:7]
-WARNING: [Synth 8-3936] Found unconnected internal register 'pc_4raw_reg' and it is trimmed from '32' to '31' bits. [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:31]
-WARNING: [Synth 8-3936] Found unconnected internal register 'pc_4sxtc32_sig_reg' and it is trimmed from '32' to '31' bits. [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'wdsel_out_reg' and it is trimmed from '32' to '16' bits. [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:183]
-WARNING: [Synth 8-3936] Found unconnected internal register 'asel_out_reg' and it is trimmed from '32' to '16' bits. [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:159]
-WARNING: [Synth 8-3936] Found unconnected internal register 'bsel_out_reg' and it is trimmed from '32' to '16' bits. [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:171]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/decoder.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'multi_seven_seg' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/multi_seven_seg.sv:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv:224]
+INFO: [Synth 8-6155] done synthesizing module 'beta_manual_tester' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_manual_tester.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'alchitry_top' (0#1) [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/alchitry_top.sv:7]
+WARNING: [Synth 8-3936] Found unconnected internal register 'pc_4raw_reg' and it is trimmed from '32' to '31' bits. [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'pc_4sxtc32_sig_reg' and it is trimmed from '32' to '31' bits. [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/pc_unit.sv:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'wdsel_out_reg' and it is trimmed from '32' to '16' bits. [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:183]
+WARNING: [Synth 8-3936] Found unconnected internal register 'asel_out_reg' and it is trimmed from '32' to '16' bits. [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:159]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bsel_out_reg' and it is trimmed from '32' to '16' bits. [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.srcs/sources_1/imports/source/beta_cpu.sv:171]
 WARNING: [Synth 8-7129] Port raddr[1] in module memory_unit is either unconnected or has no load
 WARNING: [Synth 8-7129] Port raddr[0] in module memory_unit is either unconnected or has no load
 WARNING: [Synth 8-7129] Port waddr[1] in module memory_unit is either unconnected or has no load
@@ -218,50 +227,52 @@ WARNING: [Synth 8-7129] Port io_dip[1][2] in module beta_manual_tester is either
 WARNING: [Synth 8-7129] Port io_dip[1][1] in module beta_manual_tester is either unconnected or has no load
 WARNING: [Synth 8-7129] Port io_dip[1][0] in module beta_manual_tester is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1425.789 ; gain = 575.273
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1081.602 ; gain = 599.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1425.789 ; gain = 575.273
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1081.602 ; gain = 599.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1425.789 ; gain = 575.273
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1081.602 ; gain = 599.570
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1425.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1081.602 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/alchitry.xdc]
-Finished Parsing XDC File [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/alchitry.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/alchitry.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alchitry_top_propImpl.xdc].
+Parsing XDC File [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/alchitry.xdc]
+WARNING: [Vivado 12-2489] -period contains time 111.111111 which will be rounded to 111.111 to ensure it is an integer multiple of 1 picosecond [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/alchitry.xdc:228]
+WARNING: [Vivado 12-2489] -waveform contains time 55.555556 which will be rounded to 55.556 to ensure it is an integer multiple of 1 picosecond [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/alchitry.xdc:228]
+Finished Parsing XDC File [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/alchitry.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/alchitry.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alchitry_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/alchitry_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/au_props.xdc]
-Finished Parsing XDC File [C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/constraint/au_props.xdc]
+Parsing XDC File [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/au_props.xdc]
+Finished Parsing XDC File [C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/constraint/au_props.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1529.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1178.195 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1529.234 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1178.195 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1529.234 ; gain = 678.719
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1178.195 ; gain = 696.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1529.234 ; gain = 678.719
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1178.195 ; gain = 696.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1529.234 ; gain = 678.719
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1178.195 ; gain = 696.164
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'D_motherboard_q_reg' in module 'motherboard'
 ---------------------------------------------------------------------------------------------------
@@ -275,7 +286,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'D_motherboard_q_reg' in mod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'D_motherboard_q_reg' using encoding 'sequential' in module 'motherboard'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1529.234 ; gain = 678.719
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1178.195 ; gain = 696.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -302,10 +313,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 7     
 	   4 Input   32 Bit        Muxes := 4     
-	  33 Input   32 Bit        Muxes := 2     
-	   6 Input   32 Bit        Muxes := 1     
 	   5 Input   32 Bit        Muxes := 2     
-	  64 Input   16 Bit        Muxes := 1     
 	   4 Input    8 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 2     
 	   5 Input    7 Bit        Muxes := 3     
@@ -319,7 +327,6 @@ Detailed RTL Component Info :
 	   2 Input    1 Bit        Muxes := 520   
 	   4 Input    1 Bit        Muxes := 5     
 	   5 Input    1 Bit        Muxes := 6     
-	   8 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -361,7 +368,7 @@ WARNING: [Synth 8-7129] Port io_dip[1][2] in module alchitry_top is either uncon
 WARNING: [Synth 8-7129] Port io_dip[1][1] in module alchitry_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port io_dip[1][0] in module alchitry_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:01:49 . Memory (MB): peak = 1529.234 ; gain = 678.719
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1322.844 ; gain = 840.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -383,13 +390,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 1529.234 ; gain = 678.719
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1322.844 ; gain = 840.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:02:35 . Memory (MB): peak = 1610.797 ; gain = 760.281
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1481.402 ; gain = 999.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -413,7 +420,7 @@ INFO: [Synth 8-7052] The timing for the instance beta_manual/motherboard/memory_
 INFO: [Synth 8-7052] The timing for the instance beta_manual/motherboard/memory_unit/instruction_memory/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance beta_manual/motherboard/memory_unit/data_memory/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:41 ; elapsed = 00:02:44 . Memory (MB): peak = 1667.328 ; gain = 816.812
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1545.348 ; gain = 1063.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -431,37 +438,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:45 ; elapsed = 00:02:48 . Memory (MB): peak = 1681.812 ; gain = 831.297
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.258 ; gain = 1081.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:45 ; elapsed = 00:02:48 . Memory (MB): peak = 1681.812 ; gain = 831.297
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.258 ; gain = 1081.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:45 ; elapsed = 00:02:48 . Memory (MB): peak = 1681.812 ; gain = 831.297
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.258 ; gain = 1081.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:45 ; elapsed = 00:02:48 . Memory (MB): peak = 1681.812 ; gain = 831.297
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.258 ; gain = 1081.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:45 ; elapsed = 00:02:48 . Memory (MB): peak = 1681.859 ; gain = 831.344
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.305 ; gain = 1081.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:45 ; elapsed = 00:02:48 . Memory (MB): peak = 1681.859 ; gain = 831.344
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.305 ; gain = 1081.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -478,44 +485,44 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |CARRY4   |   339|
-|3     |LUT1     |    62|
-|4     |LUT2     |   582|
-|5     |LUT3     |  1140|
-|6     |LUT4     |   206|
-|7     |LUT5     |   255|
-|8     |LUT6     |  1713|
-|9     |MUXF7    |   286|
+|2     |CARRY4   |   335|
+|3     |LUT1     |    64|
+|4     |LUT2     |   593|
+|5     |LUT3     |  1133|
+|6     |LUT4     |   192|
+|7     |LUT5     |   245|
+|8     |LUT6     |  1760|
+|9     |MUXF7    |   285|
 |10    |MUXF8    |     1|
 |11    |RAMB18E1 |     2|
 |13    |FDPE     |     4|
-|14    |FDRE     |  1189|
+|14    |FDRE     |  1177|
 |15    |FDSE     |     1|
 |16    |IBUF     |    18|
 |17    |OBUF     |    45|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:46 ; elapsed = 00:02:48 . Memory (MB): peak = 1681.859 ; gain = 831.344
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.305 ; gain = 1081.273
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:37 ; elapsed = 00:02:46 . Memory (MB): peak = 1681.859 ; gain = 727.898
-Synthesis Optimization Complete : Time (s): cpu = 00:02:46 ; elapsed = 00:02:49 . Memory (MB): peak = 1681.859 ; gain = 831.344
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1563.305 ; gain = 984.680
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1563.305 ; gain = 1081.273
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1691.410 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 628 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1572.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 623 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1695.188 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1576.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: a7cff62e
+Synth Design complete | Checksum: bbd7e21b
 INFO: [Common 17-83] Releasing license: Synthesis
-123 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+123 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:49 ; elapsed = 00:02:54 . Memory (MB): peak = 1695.188 ; gain = 1239.168
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1695.188 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Ye Ye Taut/Documents/alchitry/Lab 4/50002-lab4-beta/build/vivado/beta.runs/synth_1/alchitry_top.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file alchitry_top_utilization_synth.rpt -pb alchitry_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 16:32:19 2025...
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1576.125 ; gain = 1289.582
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1576.125 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yourmum/Downloads/lab4/grp17lab4checkoff/build/vivado/beta.runs/synth_1/alchitry_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file alchitry_top_utilization_synth.rpt -pb alchitry_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 17:14:46 2025...
