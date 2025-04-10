@@ -11,15 +11,15 @@ module instruction_rom #(
         output reg [31:0] out,
         output reg [9:0] numinstr
     );
-    localparam logic [10:0][31:0] INSTRUCTIONS = {{32'h0, 32'hc0ff0001, 32'h800000a, 32'h314b0004, 32'h643f0000, 32'h607f0000, 32'hc0bf0064, 32'h31070008, 32'h90610800, 32'hc07f0005, 32'hc03f0005}};
-    localparam NUM_OF_INSTRUCTIONS = 6'hb;
+    localparam logic [7:0][31:0] INSTRUCTIONS = {{32'h0, 32'h6fe00000, 32'h0, 32'h77e50018, 32'h84a53800, 32'h60ff0010, 32'h67e50010, 32'hc0bf0005}};
+    localparam NUM_OF_INSTRUCTIONS = 6'h8;
     always @* begin
-        if (addr < 6'hb) begin
+        if (addr < 6'h8) begin
             out = INSTRUCTIONS[addr];
         end else begin
             out = 1'h0;
         end
-        numinstr = 6'hb;
+        numinstr = 6'h8;
     end
     
     

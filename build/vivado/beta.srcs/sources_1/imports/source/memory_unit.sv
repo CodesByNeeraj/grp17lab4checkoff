@@ -18,16 +18,16 @@ module memory_unit #(
         input wire [31:0] instruction_wd,
         output reg [31:0] id
     );
-    localparam _MP_WIDTH_2079354741 = 6'h20;
-    localparam _MP_ENTRIES_2079354741 = WORDS;
-    logic [((($clog2(_MP_ENTRIES_2079354741)-1) - (0) + 1))-1:0] M_instruction_memory_address;
+    localparam _MP_WIDTH_795383731 = 6'h20;
+    localparam _MP_ENTRIES_795383731 = WORDS;
+    logic [((($clog2(_MP_ENTRIES_795383731)-1) - (0) + 1))-1:0] M_instruction_memory_address;
     logic [31:0] M_instruction_memory_read_data;
     logic [31:0] M_instruction_memory_write_data;
     logic M_instruction_memory_write_enable;
     
     simple_ram #(
-        .WIDTH(_MP_WIDTH_2079354741),
-        .ENTRIES(_MP_ENTRIES_2079354741)
+        .WIDTH(_MP_WIDTH_795383731),
+        .ENTRIES(_MP_ENTRIES_795383731)
     ) instruction_memory (
         .clk(clk),
         .address(M_instruction_memory_address),
@@ -37,17 +37,17 @@ module memory_unit #(
     );
     
     
-    localparam _MP_WIDTH_100455510 = 6'h20;
-    localparam _MP_ENTRIES_100455510 = WORDS;
-    logic [((($clog2(_MP_ENTRIES_100455510)-1) - (0) + 1))-1:0] M_data_memory_waddr;
+    localparam _MP_WIDTH_1609836306 = 6'h20;
+    localparam _MP_ENTRIES_1609836306 = WORDS;
+    logic [((($clog2(_MP_ENTRIES_1609836306)-1) - (0) + 1))-1:0] M_data_memory_waddr;
     logic [31:0] M_data_memory_write_data;
     logic M_data_memory_write_enable;
-    logic [((($clog2(_MP_ENTRIES_100455510)-1) - (0) + 1))-1:0] M_data_memory_raddr;
+    logic [((($clog2(_MP_ENTRIES_1609836306)-1) - (0) + 1))-1:0] M_data_memory_raddr;
     logic [31:0] M_data_memory_read_data;
     
     simple_dual_port_ram #(
-        .WIDTH(_MP_WIDTH_100455510),
-        .ENTRIES(_MP_ENTRIES_100455510)
+        .WIDTH(_MP_WIDTH_1609836306),
+        .ENTRIES(_MP_ENTRIES_1609836306)
     ) data_memory (
         .wclk(clk),
         .rclk(clk),
