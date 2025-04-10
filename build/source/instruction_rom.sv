@@ -5,7 +5,7 @@
 */
 
 module instruction_rom #(
-        parameter WORDS = 6'h2c
+        parameter WORDS = 6'h20
     ) (
         input wire [($clog2(WORDS))-1:0] addr,
         output reg [31:0] out,
