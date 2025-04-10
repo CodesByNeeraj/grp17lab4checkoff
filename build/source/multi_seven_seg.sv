@@ -15,17 +15,17 @@ module multi_seven_seg #(
         output reg [(DIGITS)-1:0] sel
     );
     localparam DIGIT_BITS = $clog2(DIGITS);
-    localparam _MP_SIZE_286354038 = DIGIT_BITS;
-    localparam _MP_DIV_286354038 = DIV;
-    localparam _MP_TOP_286354038 = DIGITS - 1'h1;
-    localparam _MP_UP_286354038 = 1'h1;
-    logic [(_MP_SIZE_286354038)-1:0] M_ctr_value;
+    localparam _MP_SIZE_112974031 = DIGIT_BITS;
+    localparam _MP_DIV_112974031 = DIV;
+    localparam _MP_TOP_112974031 = DIGITS - 1'h1;
+    localparam _MP_UP_112974031 = 1'h1;
+    logic [(_MP_SIZE_112974031)-1:0] M_ctr_value;
     
     counter #(
-        .SIZE(_MP_SIZE_286354038),
-        .DIV(_MP_DIV_286354038),
-        .TOP(_MP_TOP_286354038),
-        .UP(_MP_UP_286354038)
+        .SIZE(_MP_SIZE_112974031),
+        .DIV(_MP_DIV_112974031),
+        .TOP(_MP_TOP_112974031),
+        .UP(_MP_UP_112974031)
     ) ctr (
         .clk(clk),
         .rst(rst),
@@ -42,12 +42,12 @@ module multi_seven_seg #(
     );
     
     
-    localparam _MP_WIDTH_2119161483 = DIGIT_BITS;
-    logic [(_MP_WIDTH_2119161483)-1:0] M_digit_dec_in;
-    logic [({1'h1, {_MP_WIDTH_2119161483{1'h0}}})-1:0] M_digit_dec_out;
+    localparam _MP_WIDTH_349815991 = DIGIT_BITS;
+    logic [(_MP_WIDTH_349815991)-1:0] M_digit_dec_in;
+    logic [({1'h1, {_MP_WIDTH_349815991{1'h0}}})-1:0] M_digit_dec_out;
     
     decoder #(
-        .WIDTH(_MP_WIDTH_2119161483)
+        .WIDTH(_MP_WIDTH_349815991)
     ) digit_dec (
         .in(M_digit_dec_in),
         .out(M_digit_dec_out)
