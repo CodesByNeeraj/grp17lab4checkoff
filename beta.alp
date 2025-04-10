@@ -50,12 +50,6 @@
             {
                 "file": {
                     "type": "DiskFile",
-                    "path": "source/instruction_rom.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
                     "path": "source/memory_unit.luc"
                 }
             },
@@ -225,6 +219,12 @@
                 "file": {
                     "type": "DiskFile",
                     "path": "source/x_bit_right_shifter.luc"
+                }
+            },
+            {
+                "file": {
+                    "type": "DiskFile",
+                    "path": "source/instruction_rom.luc"
                 }
             }
         ],

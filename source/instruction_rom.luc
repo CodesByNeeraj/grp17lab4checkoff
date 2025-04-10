@@ -9,11 +9,17 @@ output numinstr[10]
     // Driver code, the bottommost instruction is the first instruction
     // CHECKOFF: write your own test instruction fulfilling the requirements written in the lab handout
     const INSTRUCTIONS = {
-        32h7BE3FFFB, // 0x010 BNE(R3, main, R31) 
-        32h607F0020, // 0x00C LD(R31, 32, R3) 
-        32h643F0020, // 0x008 ST(R1, 32, R31)
-        32h90410800, // 0x004 CMPEQ(R1, R1, R2) 
-        32hC03F0003 // 0x000 ADDC(R31, 3, R1) --- main
+        32h00000000,  // 0x028 ADD(R31, R31, R0)   ; done (HALT)
+        32hC0FF0001, // 0x024 ADDC(R31, 1, R6)     ; err       
+        32h0800000A, // 0x020 JMP(R31, done)
+        32h314B0004, // 0x01C BNE(R4, R5, err)
+        32h643F0000, // 0x014 ST(R4, 0, R31)
+        32h607F0000, // 0x018 LD(R31, 0, R5)
+        32hC0BF0064, // 0x010 ADDC(R31, 100, R4)
+        32h31070008, // 0x00C BEQ(R3, done, R31)
+        32h90610800, // 0x008 CMPEQ(R1, R2, R3)
+        32hC07F0005, // 0x004 ADDC(R31, 5, R2)
+        32hC03F0005 // 0x000 ADDC(R31, 5, R1)    ; main
     }
     
     const NUM_OF_INSTRUCTIONS = $width(INSTRUCTIONS,0) // compute how many instructions are there
