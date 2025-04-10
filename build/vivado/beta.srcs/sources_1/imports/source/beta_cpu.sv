@@ -52,7 +52,7 @@ module beta_cpu (
     );
     
     
-    localparam _MP_SIZE_65628744 = 6'h20;
+    localparam _MP_SIZE_467616573 = 6'h20;
     logic [31:0] M_alu_system_a;
     logic [31:0] M_alu_system_b;
     logic [5:0] M_alu_system_alufn;
@@ -63,7 +63,7 @@ module beta_cpu (
     logic M_alu_system_illop;
     
     alu #(
-        .SIZE(_MP_SIZE_65628744)
+        .SIZE(_MP_SIZE_467616573)
     ) alu_system (
         .clk(clk),
         .rst(rst),
