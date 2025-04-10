@@ -1,6 +1,8 @@
 module alu #(
     SIZE ~ 32 : SIZE > 1
 )(
+    input clk,
+    input rst,
     input a[SIZE],
     input b[SIZE],
     input alufn[6],

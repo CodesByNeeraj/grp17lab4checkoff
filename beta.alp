@@ -20,12 +20,6 @@
             {
                 "file": {
                     "type": "DiskFile",
-                    "path": "source/alu.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
                     "path": "source/bit_reverse.luc"
                 }
             },
@@ -56,18 +50,6 @@
             {
                 "file": {
                     "type": "DiskFile",
-                    "path": "source/regfile_memory.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/regfile_unit.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
                     "path": "source/instruction_rom.luc"
                 }
             },
@@ -87,12 +69,6 @@
                 "file": {
                     "type": "Component",
                     "path": "Memory/simple_dual_port_ram.v"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/pc_unit.luc"
                 }
             },
             {
@@ -128,13 +104,49 @@
             {
                 "file": {
                     "type": "DiskFile",
-                    "path": "source/adder.luc"
+                    "path": "source/regfile_unit.luc"
                 }
             },
             {
                 "file": {
                     "type": "DiskFile",
-                    "path": "source/alu_manual_tester.luc"
+                    "path": "source/regfile_memory.luc"
+                }
+            },
+            {
+                "file": {
+                    "type": "DiskFile",
+                    "path": "source/pc_unit.luc"
+                }
+            },
+            {
+                "file": {
+                    "type": "DiskFile",
+                    "path": "source/control_unit.luc"
+                }
+            },
+            {
+                "file": {
+                    "type": "DiskFile",
+                    "path": "source/beta_cpu.luc"
+                }
+            },
+            {
+                "file": {
+                    "type": "Component",
+                    "path": "Miscellaneous/bin_to_dec.luc"
+                }
+            },
+            {
+                "file": {
+                    "type": "DiskFile",
+                    "path": "source/alu.luc"
+                }
+            },
+            {
+                "file": {
+                    "type": "DiskFile",
+                    "path": "source/adder.luc"
                 }
             },
             {
@@ -171,12 +183,6 @@
                 "file": {
                     "type": "DiskFile",
                     "path": "source/mux_2.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/operations_rom.luc"
                 }
             },
             {
@@ -219,24 +225,6 @@
                 "file": {
                     "type": "DiskFile",
                     "path": "source/x_bit_right_shifter.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/control_unit.luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/beta_cpu(1).luc"
-                }
-            },
-            {
-                "file": {
-                    "type": "Component",
-                    "path": "Miscellaneous/bin_to_dec.luc"
                 }
             }
         ],

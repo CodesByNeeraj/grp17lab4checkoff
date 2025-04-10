@@ -19,18 +19,19 @@ module regfile_memory (
         rd1 = 0
         rd2 = 0 
         // TASK 7 
-        // implement two output read ports
-        rd1 = registers.q[ra1];
-        rd2 = registers.q[ra2];
+        // implement two output read ports   
+        rd1 = registers.q[ra1] 
+        rd2 = registers.q[ra2] 
         
         // implement one write port 
-        // check if(write_en) and that we are not writing to R31 
-        if (wa!=b11111 && we){
-            registers.d[wa]=wd;
+        // check if(we) and that we are not writing to R31 
+        if (we && wa != 5d31){ 
+            registers.d[wa] = wd
         }
         
+        // b11111 is 31, equivalent to 5d31 
         // always give out 0 if we are reading R31 (from either RA ports)
-        if (ra1==b11111) rd1 = 32h0;
-        if (ra2 == b11111) rd2 = 32h0;
+        if (ra1 == 5d31) rd1 = 32h0; 
+        if (ra2 == 5d31) rd2 = 32h0
     }
 }

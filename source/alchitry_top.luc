@@ -21,7 +21,7 @@ module alchitry_top (
     const CLK_FREQ = $is_sim() ? 1000 : 100000000 // put 1000 for sim, 100000000 otherwise in hardware
     
     beta_manual_tester beta_manual(.clk(clk), .rst(rst), .io_button(io_button), .io_dip(io_dip), #CLK_FREQ(CLK_FREQ))
- 
+    
     always {
         reset_cond.in = ~rst_n  // input raw inverted reset signal
         rst = reset_cond.out    // conditioned reset
@@ -30,12 +30,12 @@ module alchitry_top (
         
         usb_tx = usb_rx          // loop serial port
         
-
+        
         io_led = beta_manual.io_led
         io_segment = beta_manual.io_segment
         io_select = beta_manual.io_select
         led = beta_manual.led
-
-
+        
+        
     }
 }
