@@ -1,5 +1,5 @@
 module instruction_rom #(
-    WORDS = 44 // total instructions in this ROM
+    WORDS = 32 // total instructions in this ROM
 )(
     input addr[$clog2(WORDS)], // this ROM is WORD addressable
     output out[32],
@@ -27,8 +27,8 @@ output numinstr[10]
         32h00000000,    // NO INSTRUCTION
         32h77E50018,    // BEQ(R5, 24, R31) 011101 11111 00101 0000000000011000
         32h84A53800,    // SUB(R5, R7, R5)  100001 00101 00101 00111 00000000000
-        32h60FF0010,    // LD(R31, 16, R7)  011000 00111 11111 0000000000010000
-        32h67E50010,    // ST(R5, 16, R31)  011001 11111 00101 0000000000010000
+        32h60FF0010,    // LD(R31, 32, R7)  011000 00111 11111 0000000000010000
+        32h67E50010,    // ST(R5, 32, R31)  011001 11111 00101 0000000000010000
         32hC0BF0005     // ADDC(R31, 5, R5) 110000 00101 11111 0000000000000101
     }
     
